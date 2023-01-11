@@ -14,7 +14,7 @@ body {
 }
 
 .glow-on-hover {
-    width: 100px;
+    width: 150px;
     height: 100px;
     border: none;
     outline: none;
@@ -28,7 +28,7 @@ body {
 
 .glow-on-hover:before {
     content: '';
-    background: linear-gradient(45deg, #f07d7d, #ef8c3b, #eae734, #7def50, #3ef2d4, #6279ec, #9040e4, #ec4ac9, #e73b3b);
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
     top: -2px;
     left:-2px;
