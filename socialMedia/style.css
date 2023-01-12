@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    
+}
+.banner {
+    background: gray;
+    height: 300px;
+    position: relative;
+    text-align: center;
+}
+.networks {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.networks-outer {
+    display: table;
+    position: relative;
+    width: 5em;
+    height: 5em;
+    border: 2px solid white;
+    transition: background-color 0.2s ease-in-out;
+}
+.networks-outer a {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+}
+.fa-brands:before {
+    font-size: 40px;
+}
+.fa-solid:before {
+    font-size: 40px;
+}
+.networks:hover .networks-outer {
+    background: rgba(255 ,255 ,255, .5);
+    cursor: pointer;
+}
+
+/* social network specific */
+
+.networks:hover .fa-facebook {
+    color: rgb(59,89,152);
+}
+#facebook.networks-outer:hover {
+    border-color: rgb(59,89,152);
+}
+
+.networks:hover .fa-instagram {
+    color: black;
+}
+.networks:hover .fa-youtube {
+    color: red;
+}
+#youtube.networks-outer:hover {
+    border-color: red;
+}
+.networks:hover .fa-twitter {
+    color: rgb(29,161,242);
+}
+#twitter.networks-outer:hover {
+    border-color: rgb(29,161,242);
+}
+.networks:hover .fa-google {
+    animation: multicolor 4s linear 0s
+    infinite alternate;
+    color:#db3236;
+}
+
+#google.networks-outer:hover {
+    animation: multicolorBorder 4s linear
+    0s infinite alternate;
+    border-color:#db3236;
+}
+
+@keyframes multicolor {
+    0%{
+        color: #4885ed;
+    }
+    33% {
+        color: #3cba54;
+    }
+    66% {
+        color: #f4c20d;
+    }
+    100% {
+        color: #db3236;
+    }
+}
+
+@keyframes multicolorBorder {
+    0% {
+        border-color: #4885ed;
+    }
+    33% {
+        border-color: #3cba54;
+    }
+    66% {
+        border-color: #f4c20d;
+    }
+    100% {
+        border-color: #db3236;
+    }
+}
+.networks:hover .fa-pinterest {
+    color: rgb(189,8,28);
+}
+#pinterest.networks-outer:hover {
+    border-color: rgb(189,8,28);
+}
+.networks:hover .fa-tumblr {
+    color: #36465d;
+}
+#tumblr.networks-outer {
+    border-color: #36465d;
+}
+.networks:hover .fa-linkedin {
+    color: #0077B5;
+}
+#linkedin.networks-outer {
+    border-color: #0077B5;
+}
