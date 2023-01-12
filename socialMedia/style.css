@@ -2,8 +2,12 @@
     box-sizing: border-box;
     
 }
+body {
+    
+    background: gray; /* optional */
+}
 .banner {
-    background: gray;
+    background: gray;  
     height: 300px;
     position: relative;
     text-align: center;
@@ -20,6 +24,7 @@
     width: 5em;
     height: 5em;
     border: 2px solid white;
+    border-radius: 4em;
     transition: background-color 0.2s ease-in-out;
 }
 .networks-outer a {
@@ -120,4 +125,23 @@
 }
 #linkedin.networks-outer {
     border-color: #0077B5;
+}
+.networks:hover .fa-rss {
+    color: #ee802f;
+}
+#rss.networks-outer:hover {
+    border-color: #ee802f;
+}
+.networks:hover .fa-vimeo {
+    color: #1ab7ea;
+}
+
+#vimeo.networks-outer:hover {
+    border-color: #1ab7ea;
+}
+.networks:hover .fa-github {
+    color: black;
+}
+#github.networks-outer:hover {
+    border-color: black;
 }
